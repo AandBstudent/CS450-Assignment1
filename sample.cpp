@@ -852,7 +852,7 @@ InitLists( )
 				glVertex3f(dx + offset, 2, -dz); // 2
 
 
-		// MIDDLE
+		// MIDDLE(To Right)
 				//Front
 			glColor3f(1., 0., 0.);
 				glVertex3f(dx, 1, dz); // 1
@@ -881,6 +881,64 @@ InitLists( )
 				glVertex3f(dx, 1, -dz); // 2
 				glVertex3f(dx + 1, 0, -dz); // 2
 				glVertex3f(dx + 1, 0, dz); // 2
+
+		// Middle(to Back
+			// Top
+			glColor3f(0., 1., 0.);
+				glVertex3f(dx, 1, -dz); // 2
+				glVertex3f(-dx, 1, -dz); // 2
+				glVertex3f(-dx , 2, -dz - 1); // 2
+				glVertex3f(dx, 2, -dz - 1); // 2
+			// Bottom
+			glColor3f(0., 1., 0.);
+				glVertex3f(dx, 0, -dz); // 2
+				glVertex3f(-dx, 0, -dz); // 2
+				glVertex3f(-dx, 1, -dz - 1); // 2
+				glVertex3f(dx, 1, -dz - 1); // 2
+
+			//Front
+			glColor3f(1., 0., 0.);
+				glVertex3f(-dx, 1, -dz); // 1
+				glVertex3f(-dx, 0, -dz); // 2
+				glVertex3f(-dx,  1, -dz - 1);
+				glVertex3f(-dx, 2, -dz -1);
+
+			// Back
+			glColor3f(1., 0., 1.);
+				glVertex3f(dx, 1, -dz); // 1
+				glVertex3f(dx, 0, -dz); // 2
+				glVertex3f(dx, 1, -dz - 1);
+				glVertex3f(dx, 2, -dz - 1);
+
+		// Middle (to Other side)
+				// Top
+			glColor3f(0., 1., 0.);
+				glVertex3f(dx + offset, 1, -dz); // 2
+				glVertex3f(-dx + offset, 1, -dz); // 2
+				glVertex3f(-dx + offset, 2, -dz - 1); // 2
+				glVertex3f(dx + offset, 2, -dz - 1); // 2
+			// Bottom
+			glColor3f(0., 1., 0.);
+				glVertex3f(dx + offset, 0, -dz); // 2
+				glVertex3f(-dx + offset, 0, -dz); // 2
+				glVertex3f(-dx + offset, 1, -dz - 1); // 2
+				glVertex3f(dx + offset, 1, -dz - 1); // 2
+
+			//Front
+			glColor3f(1., 0., 0.);
+				glVertex3f(-dx + offset, 1, -dz); // 1
+				glVertex3f(-dx + offset, 0, -dz); // 2
+				glVertex3f(-dx + offset,  1, -dz - 1);
+				glVertex3f(-dx + offset, 2, -dz - 1);
+
+				// Back
+			glColor3f(1., 0., 1.);
+				glVertex3f(dx + offset, 1, -dz); // 1
+				glVertex3f(dx + offset, 0, -dz); // 2
+				glVertex3f(dx + offset, 1, -dz - 1);
+				glVertex3f(dx + offset, 2, -dz - 1);
+
+
 
 		// Part 3
 
